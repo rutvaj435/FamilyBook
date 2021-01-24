@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="text-align: center;">
+    <h1>My Family Book</h1>
+    <img id="familyBook" src="cover.jpg">
+    <h4 id="member" >My Family</h4>
+    <div>
+        
+        <button onclick="nextmember()" type="button">Next</button>
+    </div>
+
+    <script>
+        var images = ["cover.jpg", "Rutvaj_Nehete.JPG", "Ruchas_Nehete.JPG", "Sachin_Nehete.jpg", "Chanchala_Nehete.jpg"]
+        var names = [ "My Family" , "Rutvaj Nehete (me)", "Ruchas Nehete (My little brother)", "Sachin Nehete (My dad)", "Chanchala Nehete (My mom)"]
+        var i = 0
+        function nextmember() {
+            i++;
+            if (i == 5) {
+                i = 0
+            }
+            
+            document.getElementById("familyBook").src=images[i];
+            
+
+
+        }
+    </script>
+
+</body>
+
+</html>
